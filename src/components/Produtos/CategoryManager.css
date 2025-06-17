@@ -1,0 +1,126 @@
+.category-manager {
+  padding: 1rem 0;
+}
+
+.category-form-section {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.category-form-section h3 {
+  color: #4caf50;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.category-form {
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+}
+
+.category-form .form-group {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.category-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.category-input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.categories-list-section h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.category-card {
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  border-color: #4caf50;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.1);
+}
+
+.category-info h4 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.category-info p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.delete-category-btn {
+  background: #ffebee;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-category-btn:hover {
+  background: #ffcdd2;
+  transform: scale(1.1);
+}
+
+.no-categories {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .category-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
